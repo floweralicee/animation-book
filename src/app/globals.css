@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #f5efe6;
+  --paper-dark: #e8dfd3;
+  --ink: #2c1810;
+  --ink-light: #5c4033;
+  --accent: #c45d3e;
+  --accent-dark: #8b3a2a;
+  --cover: #8b3a2a;
+  --cover-dark: #5c2218;
+  --gold: #c4a35a;
+  --highlight: #f2d888;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #1a1410;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+}
+
+::selection {
+  background: var(--highlight);
+  color: var(--ink);
+}
