@@ -4,3 +4,4 @@ out/
 *.tsbuildinfo
 .env*
 /tmp/
+.vercel
