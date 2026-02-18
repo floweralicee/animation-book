@@ -3,6 +3,7 @@
 import { useState, useCallback, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { pages, BookPage } from '@/data/pages';
+import { illustrations } from '@/components/illustrations';
 
 // ─── PAGE RENDERERS ────────────────────────────────────────
 
@@ -111,6 +112,23 @@ function renderPage(page: BookPage) {
               <p key={i} className="content-paragraph">{para}</p>
             ))}
           </div>
+          {page.illustration && (
+            <div className="page-illustration">
+              {illustrations[page.illustration] ? (
+                <div style={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6 }}>
+                  {(() => { const Illus = illustrations[page.illustration!]; return <Illus />; })()}
+                  {page.illustrationCaption && (
+                    <span style={{ fontFamily: 'Caveat, cursive', fontSize: 13, color: '#8a7b6b', textAlign: 'center' as const }}>
+                      {page.illustrationCaption}
+                    </span>
+                  )}
+                </div>
+              ) : (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img src={page.illustration} alt={page.illustrationCaption || ''} />
+              )}
+            </div>
+          )}
           {page.highlight && (
             <div className="content-highlight">
               <span className="highlight-marker" />

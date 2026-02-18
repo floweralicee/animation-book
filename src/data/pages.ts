@@ -14,6 +14,8 @@ export interface BookPage {
   marginNote?: string;
   sticker?: string;
   highlight?: string;
+  illustration?: string; // path to illustration image
+  illustrationCaption?: string;
 }
 
 export const pages: BookPage[] = [
@@ -62,7 +64,6 @@ export const pages: BookPage[] = [
     chapter: 1,
     chapterTitle: 'The Anatomy of Appeal',
     chapterSubtitle: 'Why We Love Characters Before They Say a Word',
-    sticker: '🧬',
   },
   {
     id: 4,
@@ -83,6 +84,8 @@ export const pages: BookPage[] = [
     ],
     sources: ['Lorenz, K. (1943)', 'Glocker et al. (2009) PNAS'],
     marginNote: 'The genius: Pixar knows when to USE the schema and when to SUBVERT it.',
+    illustration: '/illustrations/baby-schema.png',
+    illustrationCaption: 'Baby schema proportions — large head, big eyes, small body',
   },
   {
     id: 5,
@@ -144,7 +147,6 @@ export const pages: BookPage[] = [
       'But the masterstroke is Mama Coco herself. An elderly woman who barely speaks, who seems like a background character — until the final scene reveals she\'s been the emotional core all along. The audience didn\'t know they were being set up.',
     ],
     marginNote: 'The Coco trick: make the title character seem unimportant, then make her THE most important.',
-    sticker: '💀🎸',
   },
 
   // --- CHAPTER 2: SHAPE LANGUAGE ---
@@ -154,7 +156,6 @@ export const pages: BookPage[] = [
     chapter: 2,
     chapterTitle: 'Shape Language & Visual Storytelling',
     chapterSubtitle: 'Design That Speaks Before Characters Open Their Mouths',
-    sticker: '🔺🔵🟥',
   },
   {
     id: 10,
@@ -168,6 +169,8 @@ export const pages: BookPage[] = [
       'TRIANGLES → dynamism, danger, intelligence, unpredictability. Syndrome\'s angular chin and pointed hair scream "villain" before he speaks.',
       'These work because they map to survival instincts. Round things in nature tend to be safe (fruits, babies). Angular things tend to be dangerous (thorns, teeth, claws).',
     ],
+    illustration: '/illustrations/shape-language.png',
+    illustrationCaption: 'The three fundamental shapes and their psychological associations',
     examples: [
       'Carl (Up) — all squares. Stubborn, grounded, resistant to change.',
       'Russell (Up) — all circles. Round face, round body. The perfect warm contrast.',
@@ -185,6 +188,8 @@ export const pages: BookPage[] = [
       'Pixar takes this further — the silhouette should communicate PERSONALITY. Carl\'s blocky rectangular outline says "stubborn" before he speaks. Russell\'s round outline says "open and friendly."',
       'This extends to entire casts. The silhouettes of a film\'s characters should all be DISTINCT when placed side by side. Inside Out is the gold standard: Joy (star-burst), Sadness (teardrop), Anger (brick), Fear (noodle), Disgust (broccoli).',
     ],
+    illustration: '/illustrations/silhouette-test.png',
+    illustrationCaption: 'The silhouette test — each character instantly recognizable',
     marginNote: 'Test: print your characters as black silhouettes. Can you tell them apart instantly?',
   },
   {
@@ -199,7 +204,6 @@ export const pages: BookPage[] = [
       'The living world in Coco is muted browns and warm tones. The dead world is MORE colorful than the living one. That inversion is the thesis of the entire film: the dead are more alive in memory than the living who have forgotten them.',
     ],
     highlight: 'Coco\'s dead world is more colorful than the living one. That IS the theme.',
-    sticker: '🟡🔵🔴🟢🟣',
   },
   {
     id: 13,
@@ -216,7 +220,6 @@ export const pages: BookPage[] = [
     chapter: 3,
     chapterTitle: 'The Information Economy',
     chapterSubtitle: 'Say Only What Matters, Pay It Off Later',
-    sticker: '🧊',
   },
   {
     id: 15,
@@ -247,7 +250,8 @@ export const pages: BookPage[] = [
       'Three setups, one payoff that resolves ALL of them simultaneously. That\'s A++ craft.',
     ],
     highlight: 'Three setups, one payoff. The audience doesn\'t see it coming but feels it was inevitable.',
-    sticker: '🎯',
+    illustration: '/illustrations/callbacks-web.png',
+    illustrationCaption: 'The web of callbacks — each thread connects to the payoff',
   },
   {
     id: 17,
@@ -277,7 +281,6 @@ export const pages: BookPage[] = [
     chapter: 4,
     chapterTitle: 'Callbacks & Emotional Architecture',
     chapterSubtitle: 'The Invisible Web of Meaning',
-    sticker: '🕸️',
   },
   {
     id: 20,
@@ -323,7 +326,6 @@ export const pages: BookPage[] = [
       'This is the deepest trick: the callback doesn\'t change the scene — it changes the AUDIENCE.',
     ],
     marginNote: 'The callback doesn\'t change the scene. It changes the audience.',
-    sticker: '🔄',
   },
 
   // --- CHAPTER 5: WORLD BUILDING ---
@@ -333,7 +335,6 @@ export const pages: BookPage[] = [
     chapter: 5,
     chapterTitle: 'World Building',
     chapterSubtitle: 'The Iceberg Beneath the Surface',
-    sticker: '🌎',
   },
   {
     id: 24,
@@ -373,7 +374,6 @@ export const pages: BookPage[] = [
       'This is expensive. It takes time. And it\'s non-negotiable if you want the audience to feel like the world extends beyond the frame.',
     ],
     marginNote: 'The audience can feel the difference between a set and a world.',
-    sticker: '🏗️',
   },
 
   // --- CHAPTER 6: MOVEMENT & PERFORMANCE ---
@@ -383,7 +383,6 @@ export const pages: BookPage[] = [
     chapter: 6,
     chapterTitle: 'Movement & Performance',
     chapterSubtitle: 'Acting Without Actors',
-    sticker: '🎭',
   },
   {
     id: 28,
@@ -405,6 +404,8 @@ export const pages: BookPage[] = [
       '11. Solid Drawing — three-dimensional form with weight and volume',
       '12. Appeal — the character equivalent of charisma',
     ],
+    illustration: '/illustrations/squash-stretch.png',
+    illustrationCaption: 'Squash & Stretch — the most fundamental principle',
     sources: ['Thomas, F. & Johnston, O. (1981). The Illusion of Life. Disney Editions.'],
   },
   {
@@ -436,7 +437,6 @@ export const pages: BookPage[] = [
     chapter: 7,
     chapterTitle: 'The Psychology of Rooting',
     chapterSubtitle: 'Why We Need Heroes to Win',
-    sticker: '🧠',
   },
   {
     id: 32,
@@ -449,6 +449,8 @@ export const pages: BookPage[] = [
       'Miguel\'s vulnerability in Coco is layered: he\'s a kid (power imbalance), he\'s alone in the Land of the Dead (isolation), he\'s racing against time (urgency), and his deepest desire — to be accepted for who he is — is something every audience member has felt.',
       'The formula: vulnerability + effort + goodness = audience investment.',
     ],
+    illustration: '/illustrations/mirror-neurons.png',
+    illustrationCaption: 'Mirror neurons — the empathy bridge between character and viewer',
     sources: ['Horton, D. & Wohl, R. (1956). Mass Communication and Para-social Interaction.'],
   },
   {
@@ -481,7 +483,6 @@ export const pages: BookPage[] = [
       'The wound is what makes us root for them. We\'re not cheering for the character to succeed at their goal. We\'re cheering for them to HEAL.',
     ],
     highlight: 'We don\'t root for characters to succeed. We root for them to heal.',
-    sticker: '❤️‍🩹',
   },
 
   // --- CHAPTER 8: FROM SCREEN TO FEED ---
@@ -491,7 +492,6 @@ export const pages: BookPage[] = [
     chapter: 8,
     chapterTitle: 'From Screen to Feed',
     chapterSubtitle: 'Why Animation Principles Work on Social Media',
-    sticker: '📱✨',
   },
   {
     id: 36,
@@ -523,6 +523,8 @@ export const pages: BookPage[] = [
       'THE REWARD → "It started working"',
       'The creators who share this arc authentically build the same audience investment that Miguel\'s journey builds in Coco. People don\'t follow you for your content. They follow you for your STORY.',
     ],
+    illustration: '/illustrations/hero-journey.png',
+    illustrationCaption: 'The Hero\'s Journey — same arc for characters and creators',
     marginNote: 'People don\'t follow for content. They follow for story.',
   },
   {
@@ -547,7 +549,6 @@ export const pages: BookPage[] = [
     chapter: 9,
     chapterTitle: 'The Masters Speak',
     chapterSubtitle: 'Wisdom from the People Who Built the Magic',
-    sticker: '🎬',
   },
   {
     id: 40,
@@ -628,7 +629,6 @@ export const pages: BookPage[] = [
     chapter: 10,
     chapterTitle: 'The Rulebook',
     chapterSubtitle: 'Distilled Principles for A++ Animation',
-    sticker: '📖✨',
   },
   {
     id: 47,
@@ -700,7 +700,6 @@ export const pages: BookPage[] = [
       'That\'s the whole playbook. That\'s all there is.',
       'Make them care.',
     ],
-    sticker: '❤️',
   },
   {
     id: 52,
